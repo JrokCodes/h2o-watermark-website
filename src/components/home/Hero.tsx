@@ -6,14 +6,20 @@ export default function Hero() {
 
   return (
     <section className="relative min-h-[92vh] flex items-center justify-center overflow-hidden">
-      {/* Background image — Hawaii sunset coastline */}
-      <div
-        className="absolute inset-0 bg-cover bg-center scale-105"
-        style={{
-          backgroundImage:
-            "url('https://images.unsplash.com/photo-1542259009477-d625272157b7?w=2400&q=85')",
-        }}
-      />
+      {/* Background video — Hawaii sunset */}
+      <video
+        autoPlay
+        loop
+        muted
+        playsInline
+        poster="https://images.unsplash.com/photo-1542259009477-d625272157b7?w=2400&q=85"
+        className="absolute inset-0 w-full h-full object-cover"
+      >
+        <source src="/videos/hawaii.mp4" type="video/mp4" />
+      </video>
+
+      {/* Warm color overlay for extra warmth */}
+      <div className="absolute inset-0 bg-gradient-to-b from-sunset/10 via-transparent to-ocean-dark/40" />
 
       {/* Gradient overlay */}
       <div className="absolute inset-0 gradient-hero" />
