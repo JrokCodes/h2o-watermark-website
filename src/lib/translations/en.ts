@@ -11,6 +11,11 @@ export const en = {
     contact: "Contact",
     chatNow: "Chat Now",
     callUs: "Call Us",
+    search: "Find Properties",
+    news: "News",
+    developments: "Developments",
+    openHouses: "Open Houses",
+    applyNow: "Apply Now",
   },
   topbar: {
     rating: "4.9/5 on Zillow",

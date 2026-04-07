@@ -11,6 +11,11 @@ export const ko = {
     contact: "문의하기",
     chatNow: "지금 채팅",
     callUs: "전화 문의",
+    search: "매물 검색",
+    news: "뉴스",
+    developments: "신축 프로젝트",
+    openHouses: "오픈 하우스",
+    applyNow: "신청하기",
   },
   topbar: {
     rating: "Zillow 4.9/5 평점",

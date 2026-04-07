@@ -1,5 +1,6 @@
 import { useLanguage } from "../contexts/LanguageContext";
-import { ArrowRight } from "lucide-react";
+import { salesListings } from "../data/sales-listings";
+import PropertyCard from "../components/property/PropertyCard";
 
 export default function Sales() {
   const { t } = useLanguage();
@@ -18,28 +19,12 @@ export default function Sales() {
         </div>
       </section>
 
-      <section className="py-20 bg-background">
-        <div className="container-custom max-w-3xl text-center">
-          <h2 className="font-playfair text-3xl mb-4">For Sale Listings</h2>
-          <p className="text-muted-foreground mb-8">
-            We're integrating our sales inventory into the new system. In the meantime,
-            view our active listings on Zillow or contact Christine directly.
-          </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <a
-              href="https://www.zillow.com/profile/H2OWatermark"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center justify-center gap-2 px-8 py-3 bg-ocean text-white rounded-xl font-semibold"
-            >
-              View on Zillow <ArrowRight className="h-4 w-4" />
-            </a>
-            <button
-              onClick={() => window.dispatchEvent(new CustomEvent("openChat"))}
-              className="inline-flex items-center justify-center gap-2 px-8 py-3 bg-sunset text-white rounded-xl font-semibold"
-            >
-              {t("chat.button")}
-            </button>
+      <section className="py-16 bg-background">
+        <div className="container-custom">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+            {salesListings.map((p) => (
+              <PropertyCard key={p.id} property={p} />
+            ))}
           </div>
         </div>
       </section>

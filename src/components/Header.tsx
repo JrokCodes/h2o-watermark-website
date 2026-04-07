@@ -22,9 +22,11 @@ export default function Header() {
     { name: t("nav.home"), path: "/" },
     { name: t("nav.rentals"), path: "/rentals" },
     { name: t("nav.sales"), path: "/sales" },
-    { name: t("nav.propertyManagement"), path: "/property-management" },
+    { name: t("nav.search"), path: "/search" },
+    { name: t("nav.developments"), path: "/developments" },
+    { name: t("nav.news"), path: "/news" },
+    { name: t("nav.resources"), path: "/resources" },
     { name: t("nav.about"), path: "/about" },
-    { name: t("nav.areas"), path: "/areas" },
     { name: t("nav.contact"), path: "/contact" },
   ];
 

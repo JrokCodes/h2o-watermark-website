@@ -1,0 +1,88 @@
+import type { Testimonial } from "../lib/types";
+
+export const testimonials: Testimonial[] = [
+  {
+    id: 1,
+    text: "Christine Kim provided excellent service to our family in support of both the purchase of a new home, and the subsequent sale of another home.",
+    author: "Hellum",
+    source: "Zillow",
+    rating: 5,
+  },
+  {
+    id: 2,
+    text: "It was a pleasure working with Christine and her staff. Our company, located in Ohio, was in need of temporary housing for our employees while conducting business in Hawaii.",
+    author: "lhwang3",
+    source: "Zillow",
+    rating: 5,
+  },
+  {
+    id: 3,
+    text: "She is professional, thorough and extremely intelligent. I would highly recommend her as a realtor and as a property manager. She got me TOP dollar.",
+    author: "Verified Client",
+    source: "Zillow",
+    rating: 5,
+  },
+  {
+    id: 4,
+    text: "Upon a short notice relocation to Hawaii, we relied on Christine to help us locate a suitable rental condo on Oahu. She was exceptionally personable and easy to work with.",
+    author: "Verified Client",
+    source: "Zillow",
+    rating: 5,
+  },
+  {
+    id: 5,
+    text: "The entire process was extremely smooth; Christine was always readily available and highly responsive and prompt whenever I had questions.",
+    author: "jmoon7",
+    source: "Zillow",
+    rating: 5,
+  },
+  {
+    id: 6,
+    text: "Christine Kim's knowledge, professionalism, and persistence helped us sell our existing home and purchase a new one. Excellent negotiation skills.",
+    author: "Maclangit",
+    source: "Zillow",
+    rating: 5,
+  },
+  {
+    id: 7,
+    text: "I am writing to express my complete satisfaction with Christine Kim as a realtor. Professional, conscientious, motivated.",
+    author: "Bonnie B.",
+    source: "Zillow",
+    rating: 5,
+  },
+  {
+    id: 8,
+    text: "The leasing process was smooth, painless and totally hassle free, and Christine, our agent, was so accommodating and friendly.",
+    author: "Corissa May L.",
+    source: "Yelp",
+    rating: 5,
+  },
+  {
+    id: 9,
+    text: "Christine Kim is a great realtor with excellent negotiation skills.",
+    author: "Alohafrancis",
+    source: "Zillow",
+    rating: 5,
+  },
+  {
+    id: 10,
+    text: "We have been leasing with H2O Watermark Pacific Properties for six months and continue to be EXCEPTIONALLY pleased with the property and the management.",
+    author: "Dave H.",
+    source: "Yelp",
+    rating: 5,
+  },
+  {
+    id: 11,
+    text: "Christine is sophisticated, knowledgeable, experienced, efficient and does everything with integrity and style. A keen negotiator.",
+    author: "Marcia Caldirola",
+    source: "Facebook",
+    rating: 5,
+  },
+  {
+    id: 12,
+    text: "I called Christine to discuss a potential fraudulent Craigslist listing for her property. She handled it immediately with grace and professionalism.",
+    author: "Runrig",
+    source: "Zillow",
+    rating: 5,
+  },
+];

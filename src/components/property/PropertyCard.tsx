@@ -23,12 +23,23 @@ export default function PropertyCard({ property }: { property: Property }) {
             "https://images.unsplash.com/photo-1564013799919-ab600027ffc6?w=800&q=80"
           }
           alt={property.address}
-          className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
+          className={`w-full h-full object-cover group-hover:scale-110 transition-transform duration-700 ${
+            property.status === "rented" ? "grayscale-[30%]" : ""
+          }`}
           loading="lazy"
+          onError={(e) => {
+            (e.currentTarget as HTMLImageElement).src =
+              "https://images.unsplash.com/photo-1564013799919-ab600027ffc6?w=800&q=80";
+          }}
         />
         {property.status === "listed" && (
           <span className="absolute top-4 left-4 px-3 py-1 bg-sunset text-white text-xs font-semibold rounded-full uppercase tracking-wider shadow-lg">
             {t("rentals.available")}
+          </span>
+        )}
+        {property.status === "rented" && (
+          <span className="absolute top-4 left-4 px-3 py-1 bg-foreground/70 backdrop-blur-sm text-white text-xs font-semibold rounded-full uppercase tracking-wider shadow-lg">
+            Previously Managed
           </span>
         )}
         {property.type === "furnished" && (
@@ -77,15 +88,23 @@ export default function PropertyCard({ property }: { property: Property }) {
           <p className="text-sm text-muted-foreground line-clamp-2 mb-4">{property.notes}</p>
         )}
 
-        <button
-          onClick={() => {
-            const event = new CustomEvent("openChat", { detail: { property: property.address } });
-            window.dispatchEvent(event);
-          }}
-          className="w-full py-2.5 bg-ocean/5 hover:bg-ocean text-ocean hover:text-white font-medium text-sm rounded-lg transition-all"
-        >
-          Schedule a Showing
-        </button>
+        {property.status === "listed" ? (
+          <button
+            onClick={() => {
+              const event = new CustomEvent("openChat", {
+                detail: { property: property.address + (property.unit ? " " + property.unit : "") },
+              });
+              window.dispatchEvent(event);
+            }}
+            className="w-full py-2.5 bg-ocean/5 hover:bg-ocean text-ocean hover:text-white font-medium text-sm rounded-lg transition-all"
+          >
+            Schedule a Showing
+          </button>
+        ) : (
+          <div className="w-full py-2.5 text-center text-xs text-muted-foreground">
+            Currently occupied — managed by H2O Watermark
+          </div>
+        )}
       </div>
     </div>
   );

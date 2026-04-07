@@ -11,6 +11,11 @@ export const ja = {
     contact: "お問い合わせ",
     chatNow: "今すぐチャット",
     callUs: "電話する",
+    search: "物件検索",
+    news: "ニュース",
+    developments: "新築プロジェクト",
+    openHouses: "オープンハウス",
+    applyNow: "申込みする",
   },
   topbar: {
     rating: "Zillow 4.9/5 評価",
