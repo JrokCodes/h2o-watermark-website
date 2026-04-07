@@ -15,7 +15,7 @@ export default function Hero() {
         poster="https://images.unsplash.com/photo-1542259009477-d625272157b7?w=2400&q=85"
         className="absolute inset-0 w-full h-full object-cover"
       >
-        <source src="/videos/hawaii.mp4" type="video/mp4" />
+        <source src="/videos/hero.mp4" type="video/mp4" />
       </video>
 
       {/* Warm color overlay for extra warmth */}
