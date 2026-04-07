@@ -1,5 +1,6 @@
 import Hero from "../components/home/Hero";
 import FeaturedRentals from "../components/home/FeaturedRentals";
+import FeaturedSales from "../components/home/FeaturedSales";
 import WhyChooseUs from "../components/home/WhyChooseUs";
 import AreasWeServe from "../components/home/AreasWeServe";
 import AboutTeaser from "../components/home/AboutTeaser";
@@ -11,6 +12,7 @@ export default function Home() {
     <>
       <Hero />
       <FeaturedRentals />
+      <FeaturedSales />
       <WhyChooseUs />
       <AreasWeServe />
       <AboutTeaser />

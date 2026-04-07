@@ -12,7 +12,7 @@ export default function PropertyCard({ property }: { property: Property }) {
   const price = property.rentPrice
     ? `$${property.rentPrice.toLocaleString()}${t("rentals.perMonth")}`
     : property.price
-    ? `$${(property.price / 1000).toLocaleString()}K`
+    ? `$${property.price.toLocaleString()}`
     : "Contact for price";
 
   const areaDisplay = property.area
