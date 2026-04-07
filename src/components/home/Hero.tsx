@@ -6,13 +6,15 @@ export default function Hero() {
 
   return (
     <section className="relative min-h-[92vh] flex items-center justify-center overflow-hidden">
-      {/* Background video — Hawaii sunset */}
+      {/* Solid dark background while video loads */}
+      <div className="absolute inset-0 bg-ocean-dark" />
+
+      {/* Background video — buildings */}
       <video
         autoPlay
         loop
         muted
         playsInline
-        poster="https://images.unsplash.com/photo-1542259009477-d625272157b7?w=2400&q=85"
         className="absolute inset-0 w-full h-full object-cover"
       >
         <source src="/videos/hero.mp4" type="video/mp4" />
