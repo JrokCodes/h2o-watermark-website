@@ -14,10 +14,9 @@ export default function About() {
 
   const credentials = [
     { icon: Scale, label: "J.D. (Juris Doctor)" },
-    { icon: Award, label: "CNE — Certified Negotiation Expert" },
-    { icon: Award, label: "SRES, SFR" },
-    { icon: Briefcase, label: "Former Pres., Korean Chamber of Commerce HI" },
-    { icon: Globe, label: "Multilingual: English, Korean, Japanese, Mandarin" },
+    { icon: Award, label: "Licensed Real Estate Broker — RB-20727, RB-20728" },
+    { icon: Briefcase, label: "Founder, H2O Watermark Pacific Properties LLC (since 2011)" },
+    { icon: Globe, label: "Multilingual team: English, Korean, Japanese, Mandarin" },
   ];
 
   return (
@@ -37,11 +36,11 @@ export default function About() {
         <div className="container-custom">
           <div className="grid grid-cols-1 lg:grid-cols-5 gap-12 items-start">
             <div className="lg:col-span-2">
-              <div className="aspect-[4/5] rounded-2xl overflow-hidden shadow-2xl">
+              <div className="rounded-2xl overflow-hidden shadow-2xl bg-cream max-w-sm mx-auto">
                 <img
-                  src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=800&q=85"
-                  alt="Christine Kim"
-                  className="w-full h-full object-cover"
+                  src="/images/christine.jpg"
+                  alt="Christine Kim, J.D. — Broker"
+                  className="w-full h-auto object-contain"
                 />
               </div>
             </div>
@@ -51,9 +50,9 @@ export default function About() {
               </h2>
               <p className="text-lg text-muted-foreground leading-relaxed mb-6">{t("about.bio")}</p>
               <p className="text-muted-foreground mb-8">
-                Since founding H2O Watermark Pacific Properties in April 2011, Christine has built a
-                reputation for sophisticated negotiation, multilingual client service, and a deep
-                rolodex spanning Hawaii's residential, investment, and international real estate markets.
+                Since founding H2O Watermark Pacific Properties in 2011, Christine has built a
+                reputation for sophisticated negotiation, attentive client service, and a deep
+                rolodex spanning Hawaii's residential, investment, and rental real estate markets.
               </p>
 
               {/* Credentials */}

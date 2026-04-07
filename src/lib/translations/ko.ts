@@ -75,8 +75,8 @@ export const ko = {
   about: {
     title: "Christine Kim 소개",
     subtitle: "브로커 · 대표 · 신뢰할 수 있는 어드바이저",
-    bio: "Christine Kim은 법률과 금융 분야에서의 경력을 바탕으로 2011년 4월 H2O Watermark Pacific Properties를 설립했습니다. 법학박사 학위, 공인 협상 전문가 자격(CNE, SRES, SFR), 그리고 하와이 국제 커뮤니티와의 깊은 인연을 모든 고객에게 제공합니다.",
-    credentials: "라이선스 #RB-20727, RB-20728 · J.D. · CNE, SRES, SFR · 전 하와이 한인상공회의소 회장",
+    bio: "Christine Kim은 2011년 H2O Watermark Pacific Properties를 설립했습니다. 법학박사 학위(J.D.)와 하와이 부동산 업계에서 다년간의 경험을 바탕으로 정교한 협상 능력과 세심한 서비스를 모든 고객에게 제공합니다.",
+    credentials: "공인 부동산 브로커 · 라이선스 #RB-20727, RB-20728 · J.D.",
     quote: "거래의 양측 모두에게 중요한 요소가 최대화되는 지점이 항상 존재합니다. 그 지점을 찾아 고객을 안내하는 것이 제 역할입니다.",
     learnMore: "Christine에 대해 더 알아보기",
   },

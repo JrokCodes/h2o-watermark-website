@@ -47,12 +47,9 @@ export default function Header() {
               <span>info@h2owatermark.com</span>
             </a>
           </div>
-          <div className="flex items-center gap-4">
-            <div className="hidden md:flex items-center gap-1">
-              <Star className="h-3 w-3 fill-gold text-gold" />
-              <span>{t("topbar.rating")}</span>
-            </div>
-            <span className="hidden lg:block text-white/80">{t("topbar.multilingual")}</span>
+          <div className="hidden md:flex items-center gap-1">
+            <Star className="h-3 w-3 fill-gold text-gold" />
+            <span>{t("topbar.rating")}</span>
           </div>
         </div>
       </div>
@@ -66,18 +63,12 @@ export default function Header() {
         <div className="container-custom">
           <div className="flex items-center justify-between h-20">
             {/* Logo */}
-            <Link to="/" className="flex items-center gap-3 group">
-              <div className="w-12 h-12 rounded-full gradient-ocean flex items-center justify-center text-white font-playfair text-xl font-bold shadow-md group-hover:scale-105 transition-transform">
-                H₂O
-              </div>
-              <div className="hidden sm:block">
-                <div className="font-playfair text-lg font-semibold text-ocean-dark leading-tight">
-                  H2O Watermark
-                </div>
-                <div className="text-[10px] text-muted-foreground uppercase tracking-wider">
-                  Pacific Properties
-                </div>
-              </div>
+            <Link to="/" className="flex items-center group">
+              <img
+                src="/images/h2o-logo-original.jpg"
+                alt="H2O Watermark Pacific Properties — Hawaii Homes to Opportunities"
+                className="h-14 w-auto group-hover:scale-105 transition-transform"
+              />
             </Link>
 
             {/* Desktop nav */}

@@ -10,16 +10,16 @@ export default function AboutTeaser() {
       <div className="container-custom">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
           {/* Left — Photo */}
-          <div className="relative">
-            <div className="aspect-[4/5] rounded-2xl overflow-hidden shadow-2xl">
+          <div className="relative max-w-sm mx-auto lg:mx-0">
+            <div className="rounded-2xl overflow-hidden shadow-2xl bg-cream">
               <img
-                src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=800&q=85"
-                alt="Christine Kim"
-                className="w-full h-full object-cover"
+                src="/images/christine.jpg"
+                alt="Christine Kim, J.D. — Broker"
+                className="w-full h-auto object-contain"
               />
             </div>
             {/* Floating credential badge */}
-            <div className="absolute -bottom-6 -right-6 bg-white p-6 rounded-2xl shadow-xl max-w-[240px]">
+            <div className="absolute -bottom-6 -right-6 bg-white p-5 rounded-2xl shadow-xl max-w-[220px]">
               <div className="text-3xl font-playfair font-semibold text-ocean-dark">15+</div>
               <div className="text-sm text-muted-foreground">Years serving Oahu since 2011</div>
             </div>

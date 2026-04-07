@@ -75,8 +75,8 @@ export const en = {
   about: {
     title: "Meet Christine Kim",
     subtitle: "Broker · Owner · Trusted Advisor",
-    bio: "Christine Kim founded H2O Watermark Pacific Properties in April 2011 after a career in law and finance. She brings a J.D. background, certified negotiation expertise (CNE, SRES, SFR), and deep ties to Hawaii's international community to every client relationship.",
-    credentials: "License #RB-20727, RB-20728 · J.D. · CNE, SRES, SFR · Former President, Korean Chamber of Commerce of Hawaii",
+    bio: "Christine Kim founded H2O Watermark Pacific Properties in 2011. With a J.D. background and years of experience in Hawaii real estate, she brings sophisticated negotiation skills and personal attention to every client.",
+    credentials: "Licensed Real Estate Broker · License #RB-20727, RB-20728 · J.D.",
     quote: "There is always a place where the important elements of both sides of a transaction are maximized. I see it as my role to find that place and guide my clients to it.",
     learnMore: "Learn More About Christine",
   },
