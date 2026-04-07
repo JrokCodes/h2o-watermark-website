@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&family=Noto+Sans+JP:wght@400;500;700&family=Noto+Sans+KR:wght@400;500;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* H2O Watermark — Ocean palette (her brand) */
+    --ocean: 200 80% 30%;
+    --ocean-dark: 210 85% 20%;
+    --ocean-light: 195 70% 50%;
+    --teal: 180 50% 40%;
+
+    /* Sunset accents (Tsai inspiration) */
+    --sunset: 14 85% 55%;
+    --sunset-dark: 14 80% 45%;
+    --gold: 38 95% 60%;
+
+    /* shadcn semantic tokens */
+    --background: 200 30% 98%;
+    --foreground: 210 30% 15%;
+    --card: 0 0% 100%;
+    --card-foreground: 210 30% 15%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 210 30% 15%;
+    --primary: 200 80% 30%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 14 85% 55%;
+    --secondary-foreground: 0 0% 100%;
+    --accent: 14 85% 55%;
+    --accent-foreground: 0 0% 100%;
+    --muted: 200 15% 94%;
+    --muted-foreground: 210 15% 45%;
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+    --border: 200 15% 88%;
+    --input: 200 15% 88%;
+    --ring: 200 80% 30%;
+    --cream: 40 30% 96%;
+    --radius: 0.75rem;
+
+    --gradient-hero: linear-gradient(180deg,
+      hsla(210, 85%, 20%, 0.1) 0%,
+      hsla(14, 85%, 55%, 0.25) 40%,
+      hsla(210, 85%, 20%, 0.85) 100%);
+    --gradient-ocean: linear-gradient(135deg, hsl(200, 80%, 30%), hsl(210, 85%, 20%));
+    --gradient-sunset: linear-gradient(135deg, hsl(14, 85%, 55%), hsl(38, 95%, 60%));
+  }
+
+  * { @apply border-border; }
+
+  html {
+    @apply scroll-smooth;
+    font-size: 17px;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-family: 'Inter', sans-serif;
+    line-height: 1.7;
+    -webkit-font-smoothing: antialiased;
+    margin: 0;
+  }
+
+  h1, h2, h3, h4 {
+    font-family: 'Playfair Display', serif;
+    font-weight: 600;
+    line-height: 1.15;
+    letter-spacing: -0.01em;
+    color: hsl(var(--foreground));
+  }
+
+  :lang(ja) body { font-family: 'Inter', 'Noto Sans JP', sans-serif; }
+  :lang(ko) body { font-family: 'Inter', 'Noto Sans KR', sans-serif; }
+}
+
+@layer components {
+  .gradient-hero { background: var(--gradient-hero); }
+  .gradient-ocean { background: var(--gradient-ocean); }
+  .gradient-sunset { background: var(--gradient-sunset); }
+  .container-custom {
+    @apply mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl;
+  }
+}
