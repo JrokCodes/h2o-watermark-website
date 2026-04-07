@@ -36,7 +36,7 @@ export default function About() {
         <div className="container-custom">
           <div className="grid grid-cols-1 lg:grid-cols-5 gap-12 items-start">
             <div className="lg:col-span-2">
-              <div className="rounded-2xl overflow-hidden shadow-2xl bg-cream max-w-sm mx-auto">
+              <div className="rounded-2xl overflow-hidden shadow-xl bg-cream w-56 sm:w-64 mx-auto lg:mx-0">
                 <img
                   src="/images/christine.jpg"
                   alt="Christine Kim, J.D. — Broker"

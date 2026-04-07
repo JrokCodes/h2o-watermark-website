@@ -8,25 +8,27 @@ export default function AboutTeaser() {
   return (
     <section className="py-24 bg-cream relative overflow-hidden">
       <div className="container-custom">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
-          {/* Left — Photo */}
-          <div className="relative max-w-sm mx-auto lg:mx-0">
-            <div className="rounded-2xl overflow-hidden shadow-2xl bg-cream">
-              <img
-                src="/images/christine.jpg"
-                alt="Christine Kim, J.D. — Broker"
-                className="w-full h-auto object-contain"
-              />
-            </div>
-            {/* Floating credential badge */}
-            <div className="absolute -bottom-6 -right-6 bg-white p-5 rounded-2xl shadow-xl max-w-[220px]">
-              <div className="text-3xl font-playfair font-semibold text-ocean-dark">15+</div>
-              <div className="text-sm text-muted-foreground">Years serving Oahu since 2011</div>
+        <div className="grid grid-cols-1 lg:grid-cols-5 gap-12 items-center">
+          {/* Left — Photo (smaller) */}
+          <div className="lg:col-span-2 flex justify-center lg:justify-start">
+            <div className="relative w-56 sm:w-64">
+              <div className="rounded-2xl overflow-hidden shadow-xl bg-cream">
+                <img
+                  src="/images/christine.jpg"
+                  alt="Christine Kim, J.D. — Broker"
+                  className="w-full h-auto object-contain"
+                />
+              </div>
+              {/* Floating credential badge */}
+              <div className="absolute -bottom-5 -right-5 bg-white p-4 rounded-2xl shadow-lg max-w-[180px]">
+                <div className="text-2xl font-playfair font-semibold text-ocean-dark">15+</div>
+                <div className="text-xs text-muted-foreground">Years serving Oahu since 2011</div>
+              </div>
             </div>
           </div>
 
           {/* Right — Content */}
-          <div>
+          <div className="lg:col-span-3">
             <p className="text-sunset text-sm uppercase tracking-[0.2em] font-medium mb-3">
               {t("about.subtitle")}
             </p>
