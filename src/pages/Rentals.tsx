@@ -9,7 +9,12 @@ export default function Rentals() {
   const [areaFilter, setAreaFilter] = useState("");
 
   const filtered = useMemo(() => {
-    let result = fallbackProperties;
+    let result = [...fallbackProperties].sort((a, b) => {
+      // Available first
+      if (a.status === "listed" && b.status !== "listed") return -1;
+      if (a.status !== "listed" && b.status === "listed") return 1;
+      return (b.rentPrice || 0) - (a.rentPrice || 0);
+    });
     if (filter === "available") {
       result = result.filter((p) => p.status === "listed");
     }
