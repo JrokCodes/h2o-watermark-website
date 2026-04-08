@@ -53,9 +53,14 @@ export default function PropertyCard({ property }: { property: Property }) {
 
         {/* FOR SALE / FOR RENT badge — top right */}
         {isAvailable && (
-          <span className="absolute top-4 right-4 px-3 py-1.5 bg-ocean text-white text-xs font-bold uppercase tracking-wider rounded shadow-lg">
-            For {isRental ? "Rent" : "Sale"}
-          </span>
+          <div className="absolute top-4 right-4 flex flex-col items-end gap-1.5">
+            <span className="px-3 py-1.5 bg-ocean text-white text-xs font-bold uppercase tracking-wider rounded shadow-lg">
+              For {isRental ? "Rent" : "Sale"}
+            </span>
+            <span className="px-2.5 py-1 bg-green-600 text-white text-[10px] font-bold uppercase tracking-wider rounded shadow-lg">
+              Available Now
+            </span>
+          </div>
         )}
 
         {/* Furnished badge */}
@@ -74,6 +79,11 @@ export default function PropertyCard({ property }: { property: Property }) {
       </div>
 
       <div className="p-6">
+        {property.building && (
+          <p className="text-xs uppercase tracking-[0.15em] text-sunset font-semibold mb-1">
+            {property.building}
+          </p>
+        )}
         <h3 className="font-playfair text-lg font-semibold text-foreground mb-2 line-clamp-2 min-h-[3.5rem]">
           {property.address}
           {property.unit && <span className="text-ocean ml-2 text-base">{property.unit}</span>}
