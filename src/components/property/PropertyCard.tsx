@@ -141,7 +141,7 @@ export default function PropertyCard({ property }: { property: Property }) {
             {getPropertyDetail(property.id) && (
               <Link
                 to={`/property/${property.id}`}
-                className="flex-1 py-2.5 bg-ocean/5 hover:bg-ocean text-ocean hover:text-white font-medium text-sm rounded-lg transition-all text-center"
+                className="flex-1 flex items-center justify-center text-center px-2 py-2.5 bg-ocean/5 hover:bg-ocean text-ocean hover:text-white font-medium text-sm rounded-lg transition-all"
               >
                 View Details
               </Link>
