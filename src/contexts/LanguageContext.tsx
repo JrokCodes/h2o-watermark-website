@@ -8,6 +8,27 @@ export type Language = "en" | "ja" | "ko";
 
 const translations = { en, ja, ko };
 
+// Map our language codes to Google Translate codes
+const GOOGLE_LANG: Record<Language, string> = { en: "en", ja: "ja", ko: "ko" };
+
+function applyGoogleTranslate(lang: Language) {
+  if (typeof document === "undefined") return;
+  const target = GOOGLE_LANG[lang];
+  // Setting the googtrans cookie on the bare host AND with a leading dot
+  // covers Vercel preview/prod and localhost
+  const value = target === "en" ? "/en/en" : `/en/${target}`;
+  const host = window.location.hostname;
+  const expires = "; max-age=31536000; path=/";
+  document.cookie = `googtrans=${value}${expires}`;
+  if (host && host !== "localhost") {
+    document.cookie = `googtrans=${value}; domain=${host}${expires}`;
+    const parts = host.split(".");
+    if (parts.length > 1) {
+      document.cookie = `googtrans=${value}; domain=.${parts.slice(-2).join(".")}${expires}`;
+    }
+  }
+}
+
 interface LanguageContextType {
   lang: Language;
   setLang: (lang: Language) => void;
@@ -28,7 +49,25 @@ export function LanguageProvider({ children }: { children: ReactNode }) {
     localStorage.setItem("h2o_lang", lang);
   }, [lang]);
 
-  const setLang = (newLang: Language) => setLangState(newLang);
+  // On mount, sync Google Translate to the stored language so the page loads
+  // already translated (otherwise it'd flash English first).
+  useEffect(() => {
+    if (typeof window === "undefined") return;
+    applyGoogleTranslate(lang);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
+
+  const setLang = (newLang: Language) => {
+    if (newLang === lang) return;
+    setLangState(newLang);
+    // Reload so Google Translate picks up the new googtrans cookie cleanly.
+    // Manual translations (UI strings) update instantly via React; Google
+    // Translate handles all the data content (descriptions, names, etc.)
+    applyGoogleTranslate(newLang);
+    if (typeof window !== "undefined") {
+      window.location.reload();
+    }
+  };
 
   const t = (key: string): string => {
     const keys = key.split(".");

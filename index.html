@@ -9,9 +9,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>H2O Watermark Pacific Properties — Hawaii Real Estate & Property Management</title>
     <meta name="description" content="Premier Hawaii real estate, rentals, and property management. Serving Honolulu since 2011. Multilingual service in English, Korean, Japanese, and Mandarin." />
+    <style>
+      /* Hide Google Translate UI chrome but keep its translation engine */
+      .goog-te-banner-frame.skiptranslate,
+      .goog-te-gadget,
+      #google_translate_element { display: none !important; }
+      body { top: 0 !important; }
+      .goog-tooltip, .goog-tooltip:hover, .goog-text-highlight {
+        background: transparent !important;
+        box-shadow: none !important;
+        border: none !important;
+      }
+    </style>
+    <script type="text/javascript">
+      function googleTranslateElementInit() {
+        new google.translate.TranslateElement(
+          { pageLanguage: 'en', includedLanguages: 'en,ja,ko,zh-CN', autoDisplay: false },
+          'google_translate_element'
+        );
+      }
+    </script>
+    <script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit" async></script>
   </head>
   <body>
     <div id="root"></div>
+    <div id="google_translate_element"></div>
     <script type="module" src="/src/main.tsx"></script>
   </body>
 </html>
