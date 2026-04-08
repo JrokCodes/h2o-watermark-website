@@ -136,7 +136,7 @@ export default function PropertyCard({ property }: { property: Property }) {
               }}
               className="flex-1 py-2.5 bg-sunset hover:bg-sunset-dark text-white font-medium text-sm rounded-lg transition-all"
             >
-              {isRental ? "Schedule a Showing" : "Inquire"}
+              Schedule a Showing
             </button>
             {getPropertyDetail(property.id) && (
               <Link

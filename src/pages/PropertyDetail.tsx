@@ -208,7 +208,7 @@ export default function PropertyDetail() {
                 onClick={openChat}
                 className="w-full py-3.5 bg-sunset hover:bg-sunset-dark text-white font-semibold rounded-lg transition-all mb-3"
               >
-                {isRental ? "Schedule a Showing" : "Inquire About This Listing"}
+                Schedule a Showing
               </button>
 
               <a
