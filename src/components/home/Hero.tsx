@@ -6,24 +6,22 @@ export default function Hero() {
 
   return (
     <section className="relative min-h-[92vh] flex items-center justify-center overflow-hidden">
-      {/* Solid dark background while video loads */}
+      {/* Solid dark background fallback */}
       <div className="absolute inset-0 bg-ocean-dark" />
 
-      {/* Background video — buildings */}
-      <video
-        autoPlay
-        loop
-        muted
-        playsInline
+      {/* Background image — tropical apartment living */}
+      <img
+        src="/images/hero-tropical.jpg"
+        alt=""
         className="absolute inset-0 w-full h-full object-cover"
-      >
-        <source src="/videos/hero.mp4" type="video/mp4" />
-      </video>
+        style={{ filter: "saturate(1.15) contrast(1.05) brightness(1.02)" }}
+      />
 
-      {/* Warm color overlay for extra warmth */}
-      <div className="absolute inset-0 bg-gradient-to-b from-sunset/10 via-transparent to-ocean-dark/40" />
+      {/* Warm sunset wash for golden-hour feel */}
+      <div className="absolute inset-0 bg-gradient-to-br from-orange-400/35 via-amber-300/20 to-sunset/30 mix-blend-overlay" />
+      <div className="absolute inset-0 bg-gradient-to-b from-sunset/15 via-transparent to-ocean-dark/55" />
 
-      {/* Gradient overlay */}
+      {/* Readability gradient over content area */}
       <div className="absolute inset-0 gradient-hero" />
 
       {/* Content */}
