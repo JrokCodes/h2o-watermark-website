@@ -17,20 +17,33 @@ export default function ChatWidget() {
   const [input, setInput] = useState("");
   const [typing, setTyping] = useState(false);
   const [showQuickActions, setShowQuickActions] = useState(true);
+  const [confirmingClose, setConfirmingClose] = useState(false);
+  const [pendingMessage, setPendingMessage] = useState<string | null>(null);
   const messagesEndRef = useRef<HTMLDivElement>(null);
   const inputRef = useRef<HTMLInputElement>(null);
+
+  const resetChat = () => {
+    setSessionId(null);
+    setMessages([]);
+    setInput("");
+    setTyping(false);
+    setShowQuickActions(true);
+    setConfirmingClose(false);
+  };
 
   // Listen for openChat events from anywhere on the page
   useEffect(() => {
     const handler = (e: Event) => {
-      setOpen(true);
       const detail = (e as CustomEvent).detail;
+      // Always start a fresh session when openChat is fired with a property
       if (detail?.property) {
-        // Pre-populate with property interest
-        setTimeout(() => {
-          handleSend(`I'm interested in ${detail.property}`);
-        }, 500);
+        if (sessionId) {
+          chatEnd(sessionId).catch(() => {});
+        }
+        resetChat();
+        setPendingMessage(`I'm interested in ${detail.property}`);
       }
+      setOpen(true);
     };
     window.addEventListener("openChat", handler);
     return () => window.removeEventListener("openChat", handler);
@@ -55,6 +68,16 @@ export default function ChatWidget() {
       setTimeout(() => inputRef.current?.focus(), 300);
     }
   }, [open, sessionId]);
+
+  // Send any pending pre-populated message once the session is ready
+  useEffect(() => {
+    if (sessionId && pendingMessage && messages.length > 0) {
+      const msg = pendingMessage;
+      setPendingMessage(null);
+      handleSend(msg);
+    }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [sessionId, pendingMessage, messages.length]);
 
   const handleSend = async (text?: string) => {
     const message = text ?? input.trim();
@@ -87,10 +110,21 @@ export default function ChatWidget() {
     }
   };
 
-  const handleClose = async () => {
+  const handleCloseClick = () => {
+    // If there's nothing to lose, close immediately
+    if (!sessionId || messages.length <= 1) {
+      doClose();
+      return;
+    }
+    setConfirmingClose(true);
+  };
+
+  const doClose = async () => {
+    const sid = sessionId;
     setOpen(false);
-    if (sessionId) {
-      await chatEnd(sessionId).catch(() => {});
+    resetChat();
+    if (sid) {
+      await chatEnd(sid).catch(() => {});
     }
   };
 
@@ -134,7 +168,7 @@ export default function ChatWidget() {
               </div>
             </div>
             <button
-              onClick={handleClose}
+              onClick={handleCloseClick}
               className="p-1.5 hover:bg-white/10 rounded-lg transition-colors"
               aria-label="Close chat"
             >
@@ -216,6 +250,34 @@ export default function ChatWidget() {
             </div>
             <p className="text-[10px] text-center text-muted-foreground mt-2">{t("chat.poweredBy")}</p>
           </div>
+
+          {/* Confirm close overlay */}
+          {confirmingClose && (
+            <div className="absolute inset-0 z-10 bg-black/40 backdrop-blur-sm flex items-center justify-center p-6 animate-fade-in">
+              <div className="bg-white rounded-2xl shadow-2xl p-6 max-w-sm w-full">
+                <h3 className="font-playfair text-xl font-semibold text-foreground mb-2">
+                  End this conversation?
+                </h3>
+                <p className="text-sm text-muted-foreground mb-6">
+                  Closing will end your chat with Amy. Your conversation will be cleared.
+                </p>
+                <div className="flex gap-3">
+                  <button
+                    onClick={() => setConfirmingClose(false)}
+                    className="flex-1 py-2.5 bg-ocean/5 hover:bg-ocean/10 text-ocean font-medium rounded-lg transition-colors"
+                  >
+                    Keep Chatting
+                  </button>
+                  <button
+                    onClick={doClose}
+                    className="flex-1 py-2.5 bg-sunset hover:bg-sunset-dark text-white font-medium rounded-lg transition-colors"
+                  >
+                    End Chat
+                  </button>
+                </div>
+              </div>
+            </div>
+          )}
         </div>
       )}
     </>
