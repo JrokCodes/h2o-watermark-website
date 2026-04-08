@@ -1,0 +1,182 @@
+{
+  "1": {
+    "unit": "3104",
+    "mls": "201917274",
+    "sqft": 1200,
+    "beds": 2,
+    "baths": 2.0,
+    "parking": 2,
+    "yearBuilt": null
+  },
+  "2": {
+    "unit": "unit 1604",
+    "mls": "201517762",
+    "sqft": null,
+    "beds": 2,
+    "baths": 2.0,
+    "parking": 2,
+    "yearBuilt": null
+  },
+  "3": {
+    "unit": "1905",
+    "mls": "201903075",
+    "sqft": 2400,
+    "beds": 3,
+    "baths": 3.5,
+    "parking": 3,
+    "yearBuilt": null
+  },
+  "4": {
+    "unit": "2614",
+    "mls": "202130071",
+    "sqft": 641,
+    "beds": 1,
+    "baths": 1.0,
+    "parking": 1,
+    "yearBuilt": null
+  },
+  "5": {
+    "unit": "1905",
+    "mls": "201933980",
+    "sqft": 624,
+    "beds": 1,
+    "baths": 1.0,
+    "parking": 1,
+    "yearBuilt": null
+  },
+  "6": {
+    "unit": null,
+    "mls": "202417816",
+    "sqft": null,
+    "beds": 6,
+    "baths": 6.0,
+    "parking": 3,
+    "yearBuilt": null
+  },
+  "7": {
+    "unit": null,
+    "mls": "201522784",
+    "sqft": 4500,
+    "beds": 4,
+    "baths": 3.0,
+    "parking": 6,
+    "yearBuilt": null
+  },
+  "8": {
+    "unit": "36E",
+    "mls": "202324283",
+    "sqft": 770,
+    "beds": 1,
+    "baths": 1.5,
+    "parking": 1,
+    "yearBuilt": null
+  },
+  "1001": {
+    "unit": "2103",
+    "mls": "202403199",
+    "sqft": 1113,
+    "beds": 2,
+    "baths": null,
+    "parking": 2,
+    "yearBuilt": null
+  },
+  "1002": {
+    "unit": "2803",
+    "mls": "202310606",
+    "sqft": 1113,
+    "beds": 2,
+    "baths": 2.0,
+    "parking": 2,
+    "yearBuilt": null
+  },
+  "1003": {
+    "unit": "2802",
+    "mls": "202408094",
+    "sqft": 1188,
+    "beds": 2,
+    "baths": 2.0,
+    "parking": 2,
+    "yearBuilt": null
+  },
+  "1004": {
+    "unit": "2802",
+    "mls": "201509535",
+    "sqft": 1188,
+    "beds": 2,
+    "baths": 2.0,
+    "parking": 2,
+    "yearBuilt": null
+  },
+  "1005": {
+    "unit": "1802",
+    "mls": "201521740",
+    "sqft": 1188,
+    "beds": 2,
+    "baths": 2.0,
+    "parking": 2,
+    "yearBuilt": null
+  },
+  "1006": {
+    "unit": "Central AC",
+    "mls": "202129841",
+    "sqft": 739,
+    "beds": 1,
+    "baths": 1.0,
+    "parking": 1,
+    "yearBuilt": null
+  },
+  "1007": {
+    "unit": null,
+    "mls": "202204210",
+    "sqft": 1080,
+    "beds": 2,
+    "baths": 2.0,
+    "parking": 2,
+    "yearBuilt": null
+  },
+  "1008": {
+    "unit": null,
+    "mls": "201718932",
+    "sqft": null,
+    "beds": 2,
+    "baths": 2.0,
+    "parking": 0,
+    "yearBuilt": null
+  },
+  "1009": {
+    "unit": null,
+    "mls": "201622667",
+    "sqft": 2130,
+    "beds": 4,
+    "baths": 3.0,
+    "parking": 2,
+    "yearBuilt": null
+  },
+  "1010": {
+    "unit": "E2201",
+    "mls": "202000313",
+    "sqft": 540,
+    "beds": 0,
+    "baths": 1.0,
+    "parking": 0,
+    "yearBuilt": null
+  },
+  "1011": {
+    "unit": null,
+    "mls": "201620124",
+    "sqft": 2886,
+    "beds": 4,
+    "baths": 2.5,
+    "parking": 4,
+    "yearBuilt": null
+  },
+  "1012": {
+    "unit": null,
+    "mls": "201510540",
+    "sqft": 1800,
+    "beds": 4,
+    "baths": 2.0,
+    "parking": 4,
+    "yearBuilt": null
+  }
+}

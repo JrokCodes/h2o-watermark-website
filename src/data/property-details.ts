@@ -30,6 +30,7 @@ export const propertyDetails: Record<number, PropertyDetailData> = {
     idxList: 575,
     description: "A Gorgeous Luxury Unit at The Watermark in Waikiki. 2 bedrooms, 2 bath and 2 parking in secure garage. Full floor to ceiling windows for maximum view of Pacific Ocean. A nice size Lanai to start the day with a great view for morning breakfast or a evening meal with a beautiful sunset. 24/7 security and front desk personnel with the best customer service and building maintenance standards you can find! The whole works of wonderful amenities! Fully furnished. The Watermark is in a quiet area with the lush gardens and lobby have a relaxing Hawaiiana feel. Inclusions Amenities BBQ,Exercise Room,Me",
     yearBuilt: 2008,
+    buildingSqft: 1200,
     view: ["City", "Coastline", "Garden", "Ocean", "Sunset"],
     schools: {
       elementary: "Middle School",
@@ -124,6 +125,7 @@ export const propertyDetails: Record<number, PropertyDetailData> = {
     idxList: 537,
     description: "Stunning Luxury3BD/3BA/3PK with Diamond Head, marina/canal, and sunset views! The resort-style luxury building, The Watermark, is within the heart of Waikiki! Live amongst the clouds with First class amenities including recreation area with heated pool, relaxing outdoor jacuzzi, sauna, gym, landscaped barbecue areas, wireless internet in common areas, concierge, additional storage and 24-hour security in a gated property. Very desirable location walking distance to Ala Moana Shopping Center, restaurants,Waikiki Beach and much more This is resort living at its finest. Inclusions Amenities Eleme",
     yearBuilt: 2008,
+    buildingSqft: 2400,
     view: ["Diamond Head", "Sunset"],
     inclusions: ["Amenities"],
     schools: {
@@ -143,6 +145,7 @@ export const propertyDetails: Record<number, PropertyDetailData> = {
     slug: "eaton-2614",
     idxList: 654,
     description: "Available starting end of AUGUST 2023!! FULLY FURNISHED. Experience resort-style living in this lovely well maintained unit. With remarkable views of Waikiki! Sunset, ocean, mountain, and city. This sophisticated 1 bed/1bath/1 pkg condo features central AC, wash and dryer in unit, with lanai, roofdeck pool, BBQ, Swim, Use the Gym, or the exercise room for yoga, or pilates high in the sky. No pets allowed. The rent includes utilities like cable, internet, and electric. Do not miss your chance to get this grandeur on the 26th floor. Call our office at at (808) 650-2382 for inquiries! This is a m",
+    buildingSqft: 641,
     lotSizeSqft: 104,
     schools: {
       elementary: "Middle School Washington",
@@ -179,6 +182,7 @@ export const propertyDetails: Record<number, PropertyDetailData> = {
     idxList: 529,
     description: "Feel the breeze! Stunning views in your private lanai. This cozy one bedroom, one bath, with one parking unit located in the heart of Waikiki is fully furnished, move-in ready with community laundry on each floor. The building also has great amenities including bbq area, tennis court, pool, and jacuzzi; very convenient too as nearby attractions including the Waikiki Aquarium, Waikiki Beach, Kapiolani Park, and the Honolulu Zoo. The rent includes water, sewer, and electricity. * 30 days minimum vacation rental (price will vary for short term rental less than 6 months) Inclusions Amenities BBQ,C",
     yearBuilt: 1977,
+    buildingSqft: 624,
     lotSizeSqft: 99,
     view: ["Diamond Head", "Ocean"],
     schools: {
@@ -237,6 +241,7 @@ export const propertyDetails: Record<number, PropertyDetailData> = {
     idxList: 239,
     description: "Spacious Elegant Private Poipu Drive home overlooking beautiful ocean and mountain views- 4BR but large enough for extended family living in this 4000+ sq.ft home. Master Suite upstairs for the clothes horse, as well as junior suite on first level, includes a gourmet kitchen, separate family and living areas, flagstone walkways, and a gorgeous custom bar. Exercise in the sparkling lap pool and have your margaritas on the large covered lanai. Perfect for entertaining in this the gated parking has ample room for many cars for the auto enthusiast. Inclusions Amenities Heated Pool,Pool,Private Yar",
     yearBuilt: 1970,
+    buildingSqft: 4500,
     lotSizeSqft: 14,
     view: ["Mountain", "Ocean", "Sunset"],
     schools: {
@@ -279,6 +284,7 @@ export const propertyDetails: Record<number, PropertyDetailData> = {
     idxList: 745,
     description: "Enjoy both city and beach life in this centrally located and elegantly modern completely remodeled 1 bedroom, 1 bath with 1 parking in Waikiki's renown Canterbury Place. Straddled between Waikiki and Ala Moana you are within close proximity to a plethora of fine dining, shopping, fun nighttime and beach activities. This gem of a high floor unit boasts of designer kitchen, bathroom, modern light fixtures with a thoughtful open floor plan along with a stacked washer and dryer closet for your convenience. Enjoy spectacular Moana Valley views while dining on the spacious lanai which also gives acc",
     yearBuilt: 1978,
+    buildingSqft: 770,
     lotSizeSqft: 35,
     view: ["Mountain", "Ocean"],
     schools: {
@@ -326,6 +332,7 @@ export const propertyDetails: Record<number, PropertyDetailData> = {
     idxList: 755,
     description: "Must see!! Preferred '03' unit. Spacious lanai with perfect height to relax on. Spectacular, breathtaking panoramic views of the ocean. Be apart of Hawaii's luxury condo community. Walking distance to Ala Moana. Ideal location in between Waikiki and Ala Moana. The art of fitness facility, BBQ, sauna, tropical garden and most beautiful infinity pool. Inclusions AC Central, Auto Garage Door Opener, Cable TV, Dishwasher, Disposal, Dryer, Microwave, Range/Oven, Refrigerator, Washer Amenities BBQ, Exercise Room, Meeting Room, Pool on Property, Recreation Area, Resident Manager, Sauna, Security Guar",
     yearBuilt: 2008,
+    buildingSqft: 1113,
     view: ["City", "Coastline", "Mountain", "Sunset"],
     schools: {
       elementary: "Jefferson",
@@ -423,6 +430,7 @@ export const propertyDetails: Record<number, PropertyDetailData> = {
     idxList: 725,
     description: "Behold Luxury, Class in Waikiki. 2 bedrooms, 2 baths with 2 parking. Serene ocean, city, park, mountain, sunset views from floor to ceiling windows and open, breezy lanai. Located in the quiet part of Waikiki where traffic is minimal. Great amenities- 24 hr. security, gym, BBQ, park, heated pool and more! Fully furnished, granite counters and high end appliances! Inclusions AC Central,Blinds,Dishwasher,Disposal,Dryer,Microwave Hood,Range/Oven,Refrigerator,Smoke Detector,Washer,Water Heater Amenities BBQ,Doorman,Exercise Room,Fire Sprinkler,Heated Pool,Meeting Room,Other,Patio/Deck,Pool on Prop",
     yearBuilt: 2008,
+    buildingSqft: 1113,
     schools: {
       elementary: "Middle School",
       middle: "High School",
@@ -487,6 +495,7 @@ export const propertyDetails: Record<number, PropertyDetailData> = {
     idxList: 749,
     description: "Experience luxury living at its finest! Welcome to Watermark 2802 - where sophistication meets comfort. With breathtaking views, top-notch amenities, and an unbeatable location in the heart of Honolulu, this unit offers a lifestyle like no other. Don't miss your chance to own a piece of paradise! Secure gated 2BD/2BA/2PK in Waikiki with unobstructed ocean views! Short walking distance to Ala Moana Shopping Center, restaurants,Waikiki Beach and much more! Inclusions AC Central,Auto Garage Door Opener,Blinds,Chandelier,Dishwasher,Disposal,Dryer,Microwave Hood,Range/Oven,Refrigerator,Smoke Detect",
     yearBuilt: 2008,
+    buildingSqft: 1188,
     lotSizeSqft: 158,
     schools: {
       elementary: "Middle School",
@@ -577,6 +586,7 @@ export const propertyDetails: Record<number, PropertyDetailData> = {
     idxList: 256,
     description: "H2O Stunning Luxury 2BD/2BA/2PK with spectacular Ocean Views! Motivated Seller! Dramatic price drop. The resort style luxury building, The Watermark, is within the heart of Waikiki! Live amongst the clouds with First class amenities including recreation area with heated pool, relaxing outdoor jacuzzi, sauna, gym, landscaped barbecue areas, wireless internet in common areas, concierge, additional storage and 24-hour security in a gated property. Very desirable location walking distance to Ala Moana Shopping Center, restaurants,Waikiki Beach and much more This is resort living at its finest. Inc",
     yearBuilt: 2008,
+    buildingSqft: 1188,
     lotSizeSqft: 158,
     schools: {
       elementary: "Middle School",
@@ -605,6 +615,7 @@ export const propertyDetails: Record<number, PropertyDetailData> = {
     idxList: 258,
     description: "Inclusions AC Central,Auto Garage Door Opener,Blinds,Convection Oven,Dishwasher,Disposal,Dryer,Microwave Hood,Microwave,Range/Oven,Refrigerator,Smoke Detector,Washer Amenities BBQ,Doorman,Exercise Room,Heated Pool,Meeting Room,Pool,Private Yard,Recreation Area,Resident Manager,Sauna,Security Guard,Storage,Trash Chute,Walking/Jogging Path,Wall/Fence,Whirlpool Elementary School Middle School High School Lot Size Area 0 Sq.Ft Sq.ft Building Sq.Ft Sq.ft Garage Carport Sq.Ft View Garden,Marina/Canal,Ocean,Sunset Year Built 2008 YEAR Year Remodeled YEAR Location Listing courtesy of H2O Listing Item",
     yearBuilt: 2008,
+    buildingSqft: 1188,
     schools: {
       elementary: "Middle School",
       middle: "High School",
@@ -635,6 +646,7 @@ export const propertyDetails: Record<number, PropertyDetailData> = {
     idxList: 638,
     description: "Enjoy your Waikiki paradise lifestyle at Villa On Eaton nestled in the cozy and green Shangri-la-like area of Hobron Ln. From this rare high floor unit delight in sweeping Diamond Head to ocean and mountain views. Enjoy surfing, swimming or running at nearby Ala Moana Beach Park & Bowls or be within minutes of Waikiki beach with a plethora of nearby dining and shopping venues to choose from! Entertain guests from the rooftop amenity deck which includes a pool, saunas, gym, yoga room and BBQ area with stunning 360-degree panoramic views. This 1 bedroom 1 bath completely remodeled unit offers ex",
     yearRemodeled: 1974,
+    buildingSqft: 739,
     lotSizeSqft: 104,
     view: ["Year Built http YEAR"],
     schools: {
@@ -686,6 +698,7 @@ export const propertyDetails: Record<number, PropertyDetailData> = {
     slug: "mawaena-kai-379k",
     idxList: 657,
     description: "Spacious water & marina front living along Hawaii Kai's prestigious West Marina at the world renown Mawaenakai. This 2 BR, 2 BA 1st floor townhouse overlooks stretches of West Marina with Koko Head in the backdrop. Spanning 1012 SQF of interior space with a 68 SQF lanai overviewing the marina, there's ample room to entertain both indoor and outdoor alongside gentle ocean breezes or under the evening's stars. This rare find features a formal dining room, spacious kitchen with ample storage, living room, & your own private boat slip. Mawaena Kai is dog and pet friendly! Minutes from Hawaii Kai T",
+    buildingSqft: 1080,
     lotSizeSqft: 365,
     schools: {
       elementary: "Hahaione",
@@ -781,6 +794,7 @@ export const propertyDetails: Record<number, PropertyDetailData> = {
     description: "Great Opportunity in Mariners Ridge with Fantastic views to Koko Head and Ocean at $888,888. Assessed at almost $1.1M. Lovely split level with Soaring ceilings over 2000sq. ft 4BR/3Bath SFH with 2 car garage on 7400+ sq ft lot -Large Kitchen/dining-Family room upstairs with useable Lanai. Only needs a little updating, good condition. Distressed Sale-AS-IS ONLY. Great for investors or owners! Call Agent for showings- Submit all offers with Pre-Approval or Funds Verification. Inclusions Ceiling Fan,Chandelier,Compactor,Dishwasher,Disposal,Drapes,Lawn Sprinkler,Microwave Hood,Range/Oven,Refrigera",
     yearBuilt: 1984,
     yearRemodeled: 1989,
+    buildingSqft: 2130,
     lotSizeSqft: 7,
     view: ["Mountain", "Ocean", "Sunrise", "Sunset"],
     schools: {
@@ -801,6 +815,7 @@ export const propertyDetails: Record<number, PropertyDetailData> = {
     idxList: 460,
     description: "Waikiki The Ritz Carlton-Relax in the Highest floor corner Luxury Studio residence which lives like a one bedroom with sliding glass door for privacy-just mins from Beach, shopping, restaurants- perfect for investors looking for their own use and investment. Don't delay! Own your bit of Paradise now! Inclusions AC Central,Blinds,Cable TV,Ceiling Fan,Chandelier,Convection Oven,Dishwasher,Disposal,Drapes,Dryer,Kitchenware,Linens,Microwave Hood,Range/Oven,Refrigerator,Smoke Detector,Washer Amenities BBQ,Club House,Concierge,Doorman,Exercise Room,Heated Pool,Meeting Room,Patio/Deck,Pool on Propert",
     yearBuilt: 2016,
+    buildingSqft: 540,
     view: ["City", "Mountain", "Ocean", "Sunrise", "Sunset"],
     schools: {
       elementary: "Middle School",
@@ -857,6 +872,7 @@ export const propertyDetails: Record<number, PropertyDetailData> = {
     description: "BEST WATERFRONT VALUE in Hawaii Kai! Lovely, spacious 4BR/2.5BA one level living with Marina & Mountain views -BOAT DOCK in Hawaii Kai on a fully GATED private large lot with bonus interior Security cameras. Multiple areas for entertaining, dining or relaxing enjoying the boating lifestyle. New roof/windows- 2car garage and 2 car driveway parking. Both Full Bathrooms newly remodeled & interior lanai tiled. Landscaped yard & Sprinklers- Convenient to all transportation, H-1 restaurants, and other amenities, Koko Marina, Koko Head, Hanauma Bay",
     yearBuilt: 1970,
     yearRemodeled: 2000,
+    buildingSqft: 2886,
     lotSizeSqft: 9,
     schools: {
       elementary: "Middle School",
@@ -896,6 +912,7 @@ export const propertyDetails: Record<number, PropertyDetailData> = {
     description: "Beautiful private hideaway in a safe desirable location, where most homes are over $2M. This is your opportunity to buy and build your paradise dream home on a flat level lot or downsize but have all best within walking distance to shopping centers, beaches, hiking and an easy commute to town. Inclusions AC Window Unit,Blinds,Book Shelves,Ceiling Fan,Convection Oven,Dishwasher,Disposal,Drapes,Dryer,Lawn Sprinkler,Microwave Hood,Range/Oven,Refrigerator,Smoke Detector,Solar Heater,Washer Amenities Bedroom on 1st Floor,Entry,Full Bath on 1st Floor,Landscaped,Patio/Deck,Storage,Wall/Fence Elementa",
     yearBuilt: 1965,
     yearRemodeled: 2013,
+    buildingSqft: 1800,
     lotSizeSqft: 10,
     view: ["Coastline", "Garden", "Mountain", "Ocean", "Sunset"],
     schools: {

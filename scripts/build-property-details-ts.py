@@ -4,10 +4,16 @@ import json
 import os
 
 DETAILS = os.path.join(os.path.dirname(__file__), "property-details.json")
+EXTRAS = os.path.join(os.path.dirname(__file__), "property-extras.json")
 OUT = os.path.join(os.path.dirname(__file__), "..", "src", "data", "property-details.ts")
 
 with open(DETAILS) as f:
     data = json.load(f)
+
+extras = {}
+if os.path.exists(EXTRAS):
+    with open(EXTRAS) as f:
+        extras = json.load(f)
 
 
 def to_ts_string(s):
@@ -36,6 +42,12 @@ def build_photos_array(slug, group, photos):
 def build_entry(p, group):
     schools = p.get("schools") or {}
     photos_str = build_photos_array(p["slug"], group, p.get("photos", []))
+    ex = extras.get(str(p["id"])) or {}
+    # Fill year/sqft from extras if not in details
+    if ex.get("yearBuilt") and not p.get("yearBuilt"):
+        p["yearBuilt"] = ex["yearBuilt"]
+    if ex.get("sqft") and not p.get("buildingSqft"):
+        p["buildingSqft"] = ex["sqft"]
 
     lines = [f"  {p['id']}: {{"]
     lines.append(f"    id: {p['id']},")
