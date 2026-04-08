@@ -580,35 +580,6 @@ export const propertyDetails: Record<number, PropertyDetailData> = {
       "/images/properties/sales/watermark-sale-1480k/76.jpg"
     ],
   },
-  1004: {
-    id: 1004,
-    slug: "watermark-sale-1488k",
-    idxList: 256,
-    description: "H2O Stunning Luxury 2BD/2BA/2PK with spectacular Ocean Views! Motivated Seller! Dramatic price drop. The resort style luxury building, The Watermark, is within the heart of Waikiki! Live amongst the clouds with First class amenities including recreation area with heated pool, relaxing outdoor jacuzzi, sauna, gym, landscaped barbecue areas, wireless internet in common areas, concierge, additional storage and 24-hour security in a gated property. Very desirable location walking distance to Ala Moana Shopping Center, restaurants,Waikiki Beach and much more This is resort living at its finest. Inc",
-    yearBuilt: 2008,
-    buildingSqft: 1188,
-    lotSizeSqft: 158,
-    schools: {
-      elementary: "Middle School",
-      middle: "High School",
-    },
-    photos: [
-      "/images/properties/sales/watermark-sale-1488k/01.jpg",
-      "/images/properties/sales/watermark-sale-1488k/02.jpg",
-      "/images/properties/sales/watermark-sale-1488k/03.jpg",
-      "/images/properties/sales/watermark-sale-1488k/04.jpg",
-      "/images/properties/sales/watermark-sale-1488k/05.jpg",
-      "/images/properties/sales/watermark-sale-1488k/06.jpg",
-      "/images/properties/sales/watermark-sale-1488k/07.jpg",
-      "/images/properties/sales/watermark-sale-1488k/08.jpg",
-      "/images/properties/sales/watermark-sale-1488k/09.jpg",
-      "/images/properties/sales/watermark-sale-1488k/10.jpg",
-      "/images/properties/sales/watermark-sale-1488k/11.jpg",
-      "/images/properties/sales/watermark-sale-1488k/12.jpg",
-      "/images/properties/sales/watermark-sale-1488k/13.jpg",
-      "/images/properties/sales/watermark-sale-1488k/14.jpg"
-    ],
-  },
   1005: {
     id: 1005,
     slug: "watermark-sale-1298k",
