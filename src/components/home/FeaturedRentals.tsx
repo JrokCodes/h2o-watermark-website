@@ -1,18 +1,12 @@
-import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { ArrowRight } from "lucide-react";
-import type { Property } from "../../lib/types";
-import { fetchProperties } from "../../lib/api";
+import { fallbackProperties } from "../../data/fallback-properties";
 import { useLanguage } from "../../contexts/LanguageContext";
 import PropertyCard from "../property/PropertyCard";
 
 export default function FeaturedRentals() {
   const { t } = useLanguage();
-  const [properties, setProperties] = useState<Property[]>([]);
-
-  useEffect(() => {
-    fetchProperties({ status: "listed" }).then((all) => setProperties(all.slice(0, 4)));
-  }, []);
+  const properties = fallbackProperties.filter((p) => p.status === "listed").slice(0, 4);
 
   return (
     <section className="py-24 bg-background">

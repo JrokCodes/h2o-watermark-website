@@ -19,6 +19,7 @@ import Testimonials from "./pages/Testimonials";
 import OpenHouses from "./pages/OpenHouses";
 import ApplyNow from "./pages/ApplyNow";
 import NotFound from "./pages/NotFound";
+import PropertyDetail from "./pages/PropertyDetail";
 
 function ScrollToTop() {
   const { pathname } = useLocation();
@@ -51,6 +52,7 @@ function App() {
               <Route path="/about" element={<About />} />
               <Route path="/areas" element={<Areas />} />
               <Route path="/contact" element={<Contact />} />
+              <Route path="/property/:id" element={<PropertyDetail />} />
               <Route path="*" element={<NotFound />} />
             </Routes>
           </main>

@@ -1,6 +1,8 @@
 import type { Property } from "../../lib/types";
 import { useLanguage } from "../../contexts/LanguageContext";
 import { Bed, Bath, Maximize, MapPin, Car } from "lucide-react";
+import { Link } from "react-router-dom";
+import { getPropertyDetail } from "../../data/property-details";
 
 export default function PropertyCard({ property }: { property: Property }) {
   const { t } = useLanguage();
@@ -72,7 +74,7 @@ export default function PropertyCard({ property }: { property: Property }) {
       </div>
 
       <div className="p-6">
-        <h3 className="font-playfair text-lg font-semibold text-foreground mb-2 line-clamp-1">
+        <h3 className="font-playfair text-lg font-semibold text-foreground mb-2 line-clamp-2 min-h-[3.5rem]">
           {property.address}
           {property.unit && <span className="text-ocean ml-2 text-base">{property.unit}</span>}
         </h3>
@@ -114,17 +116,27 @@ export default function PropertyCard({ property }: { property: Property }) {
         )}
 
         {isAvailable ? (
-          <button
-            onClick={() => {
-              const event = new CustomEvent("openChat", {
-                detail: { property: property.address + (property.unit ? " " + property.unit : "") },
-              });
-              window.dispatchEvent(event);
-            }}
-            className="w-full py-2.5 bg-ocean/5 hover:bg-ocean text-ocean hover:text-white font-medium text-sm rounded-lg transition-all"
-          >
-            {isRental ? "Schedule a Showing" : "Inquire About This Listing"}
-          </button>
+          <div className="flex gap-2">
+            <button
+              onClick={() => {
+                const event = new CustomEvent("openChat", {
+                  detail: { property: property.address + (property.unit ? " " + property.unit : "") },
+                });
+                window.dispatchEvent(event);
+              }}
+              className="flex-1 py-2.5 bg-sunset hover:bg-sunset-dark text-white font-medium text-sm rounded-lg transition-all"
+            >
+              {isRental ? "Schedule a Showing" : "Inquire"}
+            </button>
+            {getPropertyDetail(property.id) && (
+              <Link
+                to={`/property/${property.id}`}
+                className="flex-1 py-2.5 bg-ocean/5 hover:bg-ocean text-ocean hover:text-white font-medium text-sm rounded-lg transition-all text-center"
+              >
+                View Details
+              </Link>
+            )}
+          </div>
         ) : (
           <div className="w-full py-2.5 text-center text-xs text-muted-foreground italic">
             {isRented
