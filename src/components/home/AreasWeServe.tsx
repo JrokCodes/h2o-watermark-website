@@ -3,14 +3,14 @@ import { Link } from "react-router-dom";
 import { ArrowRight } from "lucide-react";
 
 const areas = [
-  { slug: "waikiki", key: "areas.waikiki", img: "https://images.unsplash.com/photo-1505459668311-8dfac7952bf0?w=600&q=80" },
-  { slug: "hawaii_kai", key: "areas.hawaiiKai", img: "https://images.unsplash.com/photo-1571417618486-66d68f4d7843?w=600&q=80" },
-  { slug: "ala_moana", key: "areas.alaMoana", img: "https://images.unsplash.com/photo-1582719471384-894fbb16e074?w=600&q=80" },
-  { slug: "kailua", key: "areas.kailua", img: "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=600&q=80" },
-  { slug: "kaneohe", key: "areas.kaneohe", img: "https://images.unsplash.com/photo-1542259009477-d625272157b7?w=600&q=80" },
-  { slug: "diamond_head", key: "areas.diamondHead", img: "https://images.unsplash.com/photo-1530541930197-ff16ac917b0e?w=600&q=80" },
-  { slug: "kapolei", key: "areas.kapolei", img: "https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=600&q=80" },
-  { slug: "aiea", key: "areas.aiea", img: "https://images.unsplash.com/photo-1559827260-dc66d52bef19?w=600&q=80" },
+  { slug: "waikiki", key: "areas.waikiki", img: "/images/areas/waikiki.jpg" },
+  { slug: "hawaii_kai", key: "areas.hawaiiKai", img: "/images/areas/hawaii-kai.jpg" },
+  { slug: "ala_moana", key: "areas.alaMoana", img: "/images/areas/ala-moana.jpg" },
+  { slug: "kailua", key: "areas.kailua", img: "/images/areas/kailua.jpg" },
+  { slug: "kaneohe", key: "areas.kaneohe", img: "/images/areas/kaneohe.jpg" },
+  { slug: "diamond_head", key: "areas.diamondHead", img: "/images/areas/diamond-head.jpg" },
+  { slug: "kapolei", key: "areas.kapolei", img: "/images/areas/kapolei.jpg" },
+  { slug: "aiea", key: "areas.aiea", img: "/images/areas/aiea.jpg" },
 ];
 
 export default function AreasWeServe() {
@@ -42,7 +42,7 @@ export default function AreasWeServe() {
                 className="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
                 loading="lazy"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-ocean-dark via-ocean-dark/30 to-transparent" />
+              <div className="absolute inset-0 bg-gradient-to-t from-ocean-dark via-ocean-dark/40 to-ocean-dark/10" />
               <div className="absolute bottom-0 left-0 right-0 p-5 text-white">
                 <h3 className="font-playfair text-2xl font-semibold mb-1">{t(area.key)}</h3>
                 <div className="flex items-center gap-1.5 text-xs text-white/80 group-hover:text-sunset transition-colors">
