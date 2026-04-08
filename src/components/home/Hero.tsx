@@ -72,11 +72,7 @@ export default function Hero() {
             <span>{t("hero.badge1")}</span>
           </div>
           <span className="text-white/30 hidden sm:inline">·</span>
-          <span>{t("hero.badge2")}</span>
-          <span className="text-white/30 hidden sm:inline">·</span>
           <span>{t("hero.badge3")}</span>
-          <span className="text-white/30 hidden sm:inline">·</span>
-          <span>{t("hero.badge4")}</span>
         </div>
       </div>
 
