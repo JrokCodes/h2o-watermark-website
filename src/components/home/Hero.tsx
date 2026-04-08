@@ -84,6 +84,13 @@ export default function Hero() {
         <Phone className="h-4 w-4" />
         <span>(808) 650-2382</span>
       </a>
+
+      {/* Trust badges — bottom left */}
+      <div className="absolute bottom-8 left-8 hidden md:flex items-center gap-3 px-4 py-3 bg-white/95 backdrop-blur-md rounded-lg shadow-2xl">
+        <img src="/images/badges/bot_logo1.png" alt="Realtor" className="h-10 w-auto" />
+        <img src="/images/badges/bot_logo2.png" alt="Equal Housing Opportunity" className="h-10 w-auto" />
+        <img src="/images/badges/bot_logo3.png" alt="MLS" className="h-10 w-auto" />
+      </div>
     </section>
   );
 }
