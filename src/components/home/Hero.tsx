@@ -6,28 +6,26 @@ export default function Hero() {
 
   return (
     <section className="relative min-h-[92vh] flex items-center justify-center overflow-hidden">
-      {/* Solid dark background fallback */}
-      <div className="absolute inset-0 bg-ocean-dark" />
+      {/* Deep teal background fallback (matches IntelleQ BM) */}
+      <div className="absolute inset-0 bg-[#0f2b36]" />
 
       {/* Background image — tropical apartment living */}
       <img
         src="/images/hero-tropical.jpg"
         alt=""
         className="absolute inset-0 w-full h-full object-cover"
-        style={{ filter: "saturate(1.15) contrast(1.05) brightness(1.02)" }}
       />
 
-      {/* Warm sunset wash for golden-hour feel */}
-      <div className="absolute inset-0 bg-gradient-to-br from-orange-400/35 via-amber-300/20 to-sunset/30 mix-blend-overlay" />
-      <div className="absolute inset-0 bg-gradient-to-b from-sunset/15 via-transparent to-ocean-dark/55" />
+      {/* IntelleQ BM teal gradient overlay — from-[#0f2b36]/95 via-[#1a4050]/85 to-[#2A9D8F]/50 */}
+      <div className="absolute inset-0 bg-gradient-to-br from-[#0f2b36]/95 via-[#1a4050]/85 to-[#2A9D8F]/50" />
 
-      {/* Readability gradient over content area */}
-      <div className="absolute inset-0 gradient-hero" />
+      {/* Subtle bottom darken for text legibility */}
+      <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-[#0f2b36]/40" />
 
       {/* Content */}
       <div className="relative z-10 container-custom text-center text-white py-24">
         {/* Pre-headline */}
-        <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-sunset/20 backdrop-blur-sm border border-sunset/30 mb-6 animate-fade-in">
+        <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-[#2A9D8F]/25 backdrop-blur-sm border border-[#2A9D8F]/50 mb-6 animate-fade-in">
           <span className="text-xs uppercase tracking-[0.2em] text-white font-medium">
             {t("hero.preTitle")}
           </span>
@@ -37,7 +35,7 @@ export default function Hero() {
         <h1 className="font-playfair text-5xl sm:text-6xl lg:text-7xl font-semibold mb-6 leading-tight animate-fade-in">
           {t("hero.title")}
           <br />
-          <span className="text-sunset italic">{t("hero.titleAccent")}</span>
+          <span className="text-[#5fd4c4] italic">{t("hero.titleAccent")}</span>
           <br />
           {t("hero.titleEnd")}
         </h1>
@@ -52,7 +50,7 @@ export default function Hero() {
         <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
           <a
             href="/rentals"
-            className="inline-flex items-center justify-center px-8 py-4 bg-sunset hover:bg-sunset-dark text-white rounded-lg font-semibold text-base shadow-2xl transition-all hover:-translate-y-1 hover:shadow-coral"
+            className="inline-flex items-center justify-center px-8 py-4 bg-[#2A9D8F] hover:bg-[#238a7d] text-white rounded-lg font-semibold text-base shadow-2xl shadow-[#2A9D8F]/30 transition-all hover:-translate-y-1"
           >
             {t("hero.browseProperties")}
           </a>
